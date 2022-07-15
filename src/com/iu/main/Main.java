@@ -1,25 +1,17 @@
 package com.iu.main;
 
-import com.iu.animal.Cat;
-import com.iu.animal.Human;
-import com.iu.animal.Zoo;
+import com.iu.terran.Marine;
 
 public class Main {
 
 	public static void main(String[] args) {
-		//Cat cat = new Cat();
-		//cat.sound();
-		//cat.age = 5;
-		Human human = new Human();
-		//human.age = 500;
-		human.setAge(200);
-		human.info();
+		Marine m1 = new Marine();
+		m1.setHp(0);
+		m1.setHp(30);
+		m1.info();
+		m1.move();
 		
-		System.out.println(Zoo.title);
-		Zoo.info();
 		
-		Zoo zoo = new Zoo();
-		//zoo.PRICE;
 	}
 
 }
