@@ -1,16 +1,25 @@
 package com.iu.zerg;
 
-import com.iu.terran.Scv;
+import com.iu.unit.Attacker;
+import com.iu.unit.Unit;
 
-public abstract class Hydra extends Scv {
+public class Hydra extends Unit implements Attacker {
 
-	public Hydra(int hp) {
-		super(hp);
-		// TODO Auto-generated constructor stub
-	}
-	
 	//hp, color, name
 	//움직이고, 공격
+	
+	@Override
+	public void move() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public void attack() {
+		// TODO Auto-generated method stub
+		
+	}
+	
 	
 	
 	

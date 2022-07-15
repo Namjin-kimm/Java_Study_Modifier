@@ -1,8 +1,9 @@
 package com.iu.terran;
 
+import com.iu.unit.Attacker;
 import com.iu.unit.Unit;
 
-public class Marine extends Unit {
+public class Marine extends Unit implements Attacker{
 	
 	
 	
@@ -35,6 +36,9 @@ public class Marine extends Unit {
 		this.weapon = weapon;
 	}
 
+	public void attack() {
+		this.shoot();
+	}
 	
 	
 	public void shoot() {

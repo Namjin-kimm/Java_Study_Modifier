@@ -7,12 +7,16 @@ public abstract class Unit {
 	private String color;
 	private String name;
 	
+	public Unit() {}
+	
 	public Unit(int hp) {
 		System.out.println("Super 생성자");
 		this.hp = hp;
 	}
 	
 	public abstract void move();
+	
+	//public abstract void attack();
 	
 	public void info() {
 		System.out.println("Super info");

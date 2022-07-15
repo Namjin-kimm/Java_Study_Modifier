@@ -2,6 +2,7 @@ package com.iu.main;
 
 import com.iu.terran.Marine;
 import com.iu.unit.Unit;
+import com.iu.zerg.Hydra;
 
 public class Main {
 
@@ -23,6 +24,10 @@ public class Main {
 		
 		m1 = (Marine)unit;
 		System.out.println(m1.getWeapon());
+		Hydra hydra = new Hydra();
+		
+		m1.attack();
+		hydra.attack();
 		
 		
 	}
