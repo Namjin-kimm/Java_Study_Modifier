@@ -3,7 +3,7 @@ package com.iu.ex1;
 public class Ex1Main {
 
 	public static void main(String[] args) {
-		//싱글톤
+		//싱글톤이라고 한다.
 		Iu iu = Iu.getInstance();
 		iu.setName("iu");
 		iu.setAge(30);
