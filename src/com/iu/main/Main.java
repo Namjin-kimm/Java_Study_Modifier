@@ -2,6 +2,7 @@ package com.iu.main;
 
 import com.iu.himart.Client;
 import com.iu.himart.Computer;
+import com.iu.himart.Himart;
 import com.iu.himart.Phone;
 import com.iu.himart.Tv;
 
@@ -19,6 +20,8 @@ public class Main {
 		 client.buy(computer);
 		 client.buy(tv);
 		 client.buy(phone);
+		 
+		 
 
 	}
 

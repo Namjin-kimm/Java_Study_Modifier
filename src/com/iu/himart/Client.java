@@ -13,21 +13,20 @@ public class Client extends Himart {
 		
 	}
 	
-	public void buy(Computer computer) {
-		this.money -= computer.getPrice();
-		this.point += computer.getPoint();
-		
-	}
-	public void buy(Phone phone) {
-		this.money -= phone.getPrice();
-		this.point += phone.getPoint();
-		
-	}
-	public void buy(Tv tv) {
-		this.money -= tv.getPrice();
-		this.point += tv.getPoint();
-		
-	}
+	public void buy(Himart himart){
+		this.money -= himart.getPrice();
+		this.point += himart.getPoint();
+		}
+//	public void buy(Himart himart) {
+//		this.money -= himart.getPrice();
+//		this.point += himart.getPoint();
+//		
+//	}
+//	public void buy(Himart himart) {
+//		this.money -= himart.getPrice();
+//		this.point += himart.getPoint();
+//		
+//	}
 	
 	
 
