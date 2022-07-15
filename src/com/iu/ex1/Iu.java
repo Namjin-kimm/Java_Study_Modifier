@@ -4,6 +4,8 @@ public class Iu {
 	
 	private String name;
 	private int age;
+	//fix-study
+	private String test;
 	
 	private static Iu iu = null; //클래스 변수는 클래스 메서드에서 사용 가능
 	//getInstance를 통해서 if문이 실행되면 iu는 더 이상 null이 아니다.
