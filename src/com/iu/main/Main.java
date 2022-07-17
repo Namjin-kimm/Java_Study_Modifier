@@ -1,35 +1,36 @@
 package com.iu.main;
 
-import com.iu.terran.Marine;
-import com.iu.unit.Unit;
-import com.iu.zerg.Hydra;
+import com.iu.util.CollectionStack;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Marine m1 = new Marine();
 		
-//		m1.setHp(0);
-//		m1.setHp(30);
-//		m1.info();
-//		m1.move();
+		int [] nums = {1,2,3};
+		CollectionStack cs = new CollectionStack();
+		nums = cs.add(nums);
+		for(int i = 0; i < nums.length; i++) {
+			System.out.println(nums[i]);
+			}
 		
-		Unit unit = m1;
-		System.out.println(unit.getHp());
-		System.out.println(unit.getColor());
-		System.out.println(unit.getName());
-		//System.out.println(unit.getW);//웨폰에는 접근을 못 한다. 와이?
-		//원래 마린에는 웨폰이 있지만 지금 이 m1은 unit type이 되버린 것이다. 그렇기에 unit의 멤버에만
-		//접근할 수 있다. 그러므로 웨폰에 접근하지 못함.
+		//test data set
 		
-		m1 = (Marine)unit;
-		System.out.println(m1.getWeapon());
-		Hydra hydra = new Hydra();
+		//1. com.iu.util.CollectionStack 클래스 선언
+		//add - 입력 받은 새로운 숫자 추가 무조건 0번에 추가
+		//remove - 0번 인덱스 삭제
+		//CollectionStack.add -> {4,1,2,3}
+		//CollectionStack.remove -> {2, 3}
 		
-		m1.attack();
-		hydra.attack();
+		//2. com.iu.util.CollectionQue
+		//add - 입력 받은 새로운 숫자 추가 무조건 0번에 추가
+		//remove - 마지막 인덱스 번호 삭제
+		//CollectionStack.add -> {1,2,3,4}
+		//CollectionStack.remove -> {2, 3}
 		
+		//3. com.iu.util.CollectionSet
+		//add - 새로운 숫자 추가 맨 뒤에 추가
+		// 단 중복되지 않는 숫자만 추가
+		//remove - 삭제할 숫자를 입력 받아서 일치하는 숫자 삭제
 		
 	}
-
 }
