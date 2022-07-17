@@ -2,11 +2,13 @@ package com.iu.util;
 
 import java.util.Scanner;
 
-public class CollectionStack implements Collection {
+public class CollectionQue implements Collection {
 	
-	//1. com.iu.util.CollectionStack 클래스 선언
-			//add - 입력 받은 새로운 숫자 추가, 무조건 0번에 추가
-			//remove - 0번 인덱스 삭제
+	//2. com.iu.util.CollectionQue
+			//add - 입력 받은 새로운 숫자 추가 무조건 0번에 추가
+			//remove - 마지막 인덱스 번호 삭제
+			//CollectionStack.add -> {1,2,3,4}
+			//CollectionStack.remove -> {2, 3}
 	
 	public int [] add(int [] numbers) {
 		int [] numbersCopy = new int[numbers.length + 1];
@@ -27,16 +29,12 @@ public class CollectionStack implements Collection {
 	
 	public int [] remove(int [] numbers) {
 		int [] numbersCopy = new int[numbers.length - 1];
-		System.out.println("0번 인덱스 값을 삭제합니다");
-		int index = 0;
-		for(int i = 1; i < numbers.length; i++) {
-			numbersCopy[index] = numbers[i];
-			index++;
+		System.out.println("마지막 인덱스 값을 삭제합니다");
+		for(int i = 0; i < numbersCopy.length; i++) {
+			numbersCopy[i] = numbers[i];
 		}
 		numbers = numbersCopy;
 		return numbers;
 	}
-	
-	
 
 }
